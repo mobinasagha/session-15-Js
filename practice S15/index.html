@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>session 15</title>
+    <link rel="stylesheet" href="../Style/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="site-title">
+        <h4>shop Training JS</h4>
+      </div>
+    </header>
+
+    <main>
+      <div class="input-container">
+        <input
+          type="text"
+          class="input-text"
+          id="input-product"
+          placeholder="Search By Name..."
+        />
+        <input
+          type="number"
+          class="input-num"
+          id="input-price"
+          placeholder="Enter price"
+          min="10"
+          max="100"
+        />
+        <button class="btn-price" id="btn-price">Go</button>
+      </div>
+      <div class="container">
+        <aside>
+          <div class="sidebar">
+            <button class="filter-btn" id="btn-all" data-filter="all">
+              All
+            </button>
+            <button
+              class="filter-btn"
+              id="btn-tech"
+              data-filter="men's clothing"
+            >
+              Men's Clothing
+            </button>
+            <button
+              class="filter-btn"
+              id="btn-tech"
+              data-filter="women's clothing"
+            >
+              Women's Clothing
+            </button>
+            <button class="filter-btn" id="btn-health" data-filter="jewelery">
+              Jewelery
+            </button>
+            <button class="filter-btn" id="btn-cloth" data-filter="electronics">
+              Electronics
+            </button>
+          </div>
+        </aside>
+
+        <div class="cards"></div>
+      </div>
+    </main>
+    <div id="cart-container">
+      <h2 class="cart-title">shopping cart</h2>
+      <div id="cart-items"></div>
+      <div class="end-cart">
+        <p>جمع کل: <span id="total-price">0</span> تومان</p>
+        <button id="checkout">پرداخت</button>
+      </div>
+    </div>
+    <script src="../JS/script.js"></script>
+  </body>
+</html>
